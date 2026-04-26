@@ -30,6 +30,7 @@ X-KDE-Submenu[fr]=ReImage - Compresser et redimensionner
 X-KDE-Submenu[es]=ReImage - Comprimir y redimensionar
 X-KDE-Submenu[fa]=ReImage - فشرده‌سازی و تغییر اندازه
 X-KDE-Submenu[ru]=ReImage - Сжатие и изменение размера
+X-KDE-Submenu[zh_CN]=ReImage - 压缩与调整大小
 
 ################################################################################
 
@@ -43,6 +44,7 @@ Name[fr]=Rendre progressif
 Name[es]=Hacer progresivo
 Name[fa]=پیشرونده کردن
 Name[ru]=Сделать прогрессивным
+Name[zh_CN]=渐进式处理
 
 [Desktop Action optimize]
 Exec=reimage-kdialog optimize %F
@@ -54,6 +56,7 @@ Name[fr]=Optimisation web complète
 Name[es]=Optimización web completa
 Name[fa]=بهینه‌سازی کامل وب
 Name[ru]=Полная оптимизация для веб
+Name[zh_CN]=完整网页优化
 
 [Desktop Action compress-50]
 Exec=reimage-kdialog compress 50% %F
@@ -65,6 +68,7 @@ Name[fr]=Compresser à 50%
 Name[es]=Comprimir al 50%
 Name[fa]=فشرده‌سازی به ۵۰٪
 Name[ru]=Сжать до 50%
+Name[zh_CN]=压缩至 50%
 
 [Desktop Action compress-70]
 Exec=reimage-kdialog compress 70% %F
@@ -76,6 +80,7 @@ Name[fr]=Compresser à 70%
 Name[es]=Comprimir al 70%
 Name[fa]=فشرده‌سازی به ۷۰٪
 Name[ru]=Сжать до 70%
+Name[zh_CN]=压缩至 70%
 
 [Desktop Action compress-75]
 Exec=reimage-kdialog compress 75% %F
@@ -87,6 +92,7 @@ Name[fr]=Compresser à 75%
 Name[es]=Comprimir al 75%
 Name[fa]=فشرده‌سازی به ۷۵٪
 Name[ru]=Сжать до 75%
+Name[zh_CN]=压缩至 75%
 
 [Desktop Action compress-80]
 Exec=reimage-kdialog compress 80% %F
@@ -98,6 +104,7 @@ Name[fr]=Compresser à 80%
 Name[es]=Comprimir al 80%
 Name[fa]=فشرده‌سازی به ۸۰٪
 Name[ru]=Сжать до 80%
+Name[zh_CN]=压缩至 80%
 
 [Desktop Action compress-90]
 Exec=reimage-kdialog compress 90% %F
@@ -109,6 +116,7 @@ Name[fr]=Compresser à 90%
 Name[es]=Comprimir al 90%
 Name[fa]=فشرده‌سازی به ۹۰٪
 Name[ru]=Сжать до 90%
+Name[zh_CN]=压缩至 90%
 
 [Desktop Action custom-compress]
 Exec=reimage-kdialog compress custom %F
@@ -120,6 +128,7 @@ Name[fr]=Qualité personnalisée
 Name[es]=Calidad personalizada
 Name[fa]=کیفیت سفارشی
 Name[ru]=Выбрать качество
+Name[zh_CN]=自定义质量
 
 ################################################################################
 
@@ -133,6 +142,7 @@ Name[fr]=Redimensionner à 25%
 Name[es]=Redimensionar al 25%
 Name[fa]=تغییر اندازه به ۲۵٪
 Name[ru]=Изменить размер до 25%
+Name[zh_CN]=调整大小至 25%
 
 [Desktop Action resize-50]
 Exec=reimage-kdialog resize 50% %F
@@ -144,6 +154,7 @@ Name[fr]=Redimensionner à 50%
 Name[es]=Redimensionar al 50%
 Name[fa]=تغییر اندازه به ۵۰٪
 Name[ru]=Изменить размер до 50%
+Name[zh_CN]=调整大小至 50%
 
 [Desktop Action resize-75]
 Exec=reimage-kdialog resize 75% %F
@@ -155,6 +166,7 @@ Name[fr]=Redimensionner à 75%
 Name[es]=Redimensionar al 75%
 Name[fa]=تغییر اندازه به ۷۵٪
 Name[ru]=Изменить размер до 75%
+Name[zh_CN]=调整大小至 75%
 
 ################################################################################
 
@@ -168,6 +180,7 @@ Name[fr]=Redimensionner à 300x225 px
 Name[es]=Redimensionar a 300x225 px
 Name[fa]=تغییر اندازه به ۳۰۰x۲۲۵ پیکسل
 Name[ru]=Изменить размер до 300x225 px
+Name[zh_CN]=调整大小至 300x225 像素
 
 [Desktop Action resize-600x450]
 Exec=reimage-kdialog resize 600x450 %F
@@ -179,6 +192,7 @@ Name[fr]=Redimensionner à 600x450 px
 Name[es]=Redimensionar a 600x450 px
 Name[fa]=تغییر اندازه به ۶۰۰x۴۵۰ پیکسل
 Name[ru]=Изменить размер до 600x450 px
+Name[zh_CN]=调整大小至 600x450 像素
 
 [Desktop Action resize-640x480]
 Exec=reimage-kdialog resize 640x480 %F
@@ -190,6 +204,7 @@ Name[fr]=Redimensionner à 640x480 px
 Name[es]=Redimensionar a 640x480 px
 Name[fa]=تغییر اندازه به ۶۴۰x۴۸۰ پیکسل
 Name[ru]=Изменить размер до 640x480 px
+Name[zh_CN]=调整大小至 640x480 像素
 
 [Desktop Action resize-800x600]
 Exec=reimage-kdialog resize 800x600 %F
@@ -201,6 +216,7 @@ Name[fr]=Redimensionner à 800x600 px
 Name[es]=Redimensionar a 800x600 px
 Name[fa]=تغییر اندازه به ۸۰۰x۶۰۰ پیکسل
 Name[ru]=Изменить размер до 800x600 px
+Name[zh_CN]=调整大小至 800x600 像素
 
 [Desktop Action resize-1024x768]
 Exec=reimage-kdialog resize 1024x768 %F
@@ -212,6 +228,7 @@ Name[fr]=Redimensionner à 1024x768 px
 Name[es]=Redimensionar a 1024x768 px
 Name[fa]=تغییر اندازه به ۱۰۲۴x۷۶۸ پیکسل
 Name[ru]=Изменить размер до 1024x768 px
+Name[zh_CN]=调整大小至 1024x768 像素
 
 [Desktop Action resize-1200x630]
 Exec=reimage-kdialog resize 1200x630 %F
@@ -223,6 +240,7 @@ Name[fr]=Redimensionner à 1200x630 px (Social OG)
 Name[es]=Redimensionar a 1200x630 px (Social OG)
 Name[fa]=تغییر اندازه به ۱۲۰۰x۶۳۰ پیکسل (Social OG)
 Name[ru]=Изменить размер до 1200x630 px (Social OG)
+Name[zh_CN]=调整大小至 1200x630 像素 (Social OG)
 
 [Desktop Action resize-1200x900]
 Exec=reimage-kdialog resize 1200x900 %F
@@ -234,6 +252,7 @@ Name[fr]=Redimensionner à 1200x900 px
 Name[es]=Redimensionar a 1200x900 px
 Name[fa]=تغییر اندازه به ۱۲۰۰x۹۰۰ پیکسل
 Name[ru]=Изменить размер до 1200x900 px
+Name[zh_CN]=调整大小至 1200x900 像素
 
 [Desktop Action resize-1400x1050]
 Exec=reimage-kdialog resize 1400x1050 %F
@@ -245,6 +264,7 @@ Name[fr]=Redimensionner à 1400x1050 px
 Name[es]=Redimensionar a 1400x1050 px
 Name[fa]=تغییر اندازه به ۱۴۰۰x۱۰۵۰ پیکسل
 Name[ru]=Изменить размер до 1400x1050 px
+Name[zh_CN]=调整大小至 1400x1050 像素
 
 [Desktop Action resize-1920x1080]
 Exec=reimage-kdialog resize 1920x1080 %F
@@ -256,6 +276,7 @@ Name[fr]=Redimensionner à 1920x1080 px
 Name[es]=Redimensionar a 1920x1080 px
 Name[fa]=تغییر اندازه به ۱۹۲۰x۱۰۸۰ پیکسل
 Name[ru]=Изменить размер до 1920x1080 px
+Name[zh_CN]=调整大小至 1920x1080 像素
 
 ################################################################################
 
@@ -269,3 +290,4 @@ Name[fr]=Redimensionnement personnalisé
 Name[es]=Redimensionamiento personalizado
 Name[fa]=تغییر اندازه سفارشی
 Name[ru]=Произвольное изменение размера
+Name[zh_CN]=自定义调整大小

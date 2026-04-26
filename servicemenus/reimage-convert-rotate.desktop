@@ -30,6 +30,7 @@ X-KDE-Submenu[fr]=ReImage - Conversion et rotation
 X-KDE-Submenu[es]=ReImage - Convertir y girar
 X-KDE-Submenu[fa]=ReImage - تبدیل و چرخش
 X-KDE-Submenu[ru]=ReImage - Конвертация и поворот
+X-KDE-Submenu[zh_CN]=ReImage - 转换与旋转
 
 ################################################################################
 
@@ -43,6 +44,7 @@ Name[fr]=Convertir en GIF
 Name[es]=Convertir a GIF
 Name[fa]=تبدیل به GIF
 Name[ru]=Конвертировать в GIF
+Name[zh_CN]=转换为 GIF
 
 [Desktop Action jpeg]
 Exec=reimage-kdialog convert jpg %F
@@ -54,6 +56,7 @@ Name[fr]=Convertir en JPEG
 Name[es]=Convertir a JPEG
 Name[fa]=تبدیل به JPEG
 Name[ru]=Конвертировать в JPEG
+Name[zh_CN]=转换为 JPEG
 
 [Desktop Action png]
 Exec=reimage-kdialog convert png %F
@@ -65,6 +68,7 @@ Name[fr]=Convertir en PNG
 Name[es]=Convertir a PNG
 Name[fa]=تبدیل به PNG
 Name[ru]=Конвертировать в PNG
+Name[zh_CN]=转换为 PNG
 
 [Desktop Action tiff]
 Exec=reimage-kdialog convert tif %F
@@ -76,6 +80,7 @@ Name[fr]=Convertir en TIFF
 Name[es]=Convertir a TIFF
 Name[fa]=تبدیل به TIFF
 Name[ru]=Конвертировать в TIFF
+Name[zh_CN]=转换为 TIFF
 
 [Desktop Action webp]
 Exec=reimage-kdialog convert webp %F
@@ -87,6 +92,7 @@ Name[fr]=Convertir en WEBP
 Name[es]=Convertir a WEBP
 Name[fa]=تبدیل به WEBP
 Name[ru]=Конвертировать в WEBP
+Name[zh_CN]=转换为 WEBP
 
 ################################################################################
 
@@ -100,6 +106,7 @@ Name[fr]=Convertir en PDF
 Name[es]=Convertir a PDF
 Name[fa]=تبدیل به PDF
 Name[ru]=Конвертировать в PDF
+Name[zh_CN]=转换为 PDF
 
 [Desktop Action pdfa]
 Exec=reimage-kdialog convert pdfa %F
@@ -111,6 +118,7 @@ Name[fr]=Convertir en PDF/A-1
 Name[es]=Convertir a PDF/A-1
 Name[fa]=تبدیل به PDF/A-1
 Name[ru]=Конвертировать в PDF/A-1
+Name[zh_CN]=转换为 PDF/A-1
 
 ################################################################################
 
@@ -124,6 +132,7 @@ Name[fr]=Générer un GIF animé
 Name[es]=Generar GIF animado
 Name[fa]=تولید GIF متحرک
 Name[ru]=Создать анимированный GIF
+Name[zh_CN]=生成动画 GIF
 
 [Desktop Action favicons]
 Exec=reimage-kdialog favicons all %F
@@ -135,6 +144,7 @@ Name[fr]=Générer des favicons
 Name[es]=Generar favicons
 Name[fa]=تولید فاوآیکون
 Name[ru]=Создать фавиконки
+Name[zh_CN]=生成网站图标
 
 [Desktop Action base64]
 Exec=reimage-kdialog base64 %F
@@ -146,6 +156,7 @@ Name[fr]=Convertir en Base64
 Name[es]=Convertir a Base64
 Name[fa]=تبدیل به Base64
 Name[ru]=Конвертировать в Base64
+Name[zh_CN]=转换为 Base64
 
 [Desktop Action convert-custom]
 Exec=reimage-kdialog convert custom %F
@@ -157,6 +168,7 @@ Name[fr]=Convertir au format ...
 Name[es]=Convertir a formato ...
 Name[fa]=تبدیل به فرمت ...
 Name[ru]=Конвертировать в формат ...
+Name[zh_CN]=转换为格式 ...
 
 [Desktop Action formats]
 Exec=reimage-kdialog convert formats
@@ -168,6 +180,7 @@ Name[fr]=Liste des formats
 Name[es]=Lista de formatos
 Name[fa]=لیست فرمت‌ها
 Name[ru]=Список форматов
+Name[zh_CN]=格式列表
 
 ################################################################################
 
@@ -181,6 +194,7 @@ Name[fr]=Rotation de 90°
 Name[es]=Girar 90°
 Name[fa]=چرخش ۹۰ درجه
 Name[ru]=Повернуть на 90°
+Name[zh_CN]=旋转 90°
 
 [Desktop Action rotate-180]
 Exec=reimage-kdialog rotate 180 %F
@@ -192,6 +206,7 @@ Name[fr]=Rotation de 180°
 Name[es]=Girar 180°
 Name[fa]=چرخش ۱۸۰ درجه
 Name[ru]=Повернуть на 180°
+Name[zh_CN]=旋转 180°
 
 [Desktop Action rotate-270]
 Exec=reimage-kdialog rotate 270 %F
@@ -203,6 +218,7 @@ Name[fr]=Rotation de -90°
 Name[es]=Girar -90°
 Name[fa]=چرخش ۹۰- درجه
 Name[ru]=Повернуть на -90°
+Name[zh_CN]=旋转 -90°
 
 [Desktop Action rotate-custom]
 Exec=reimage-kdialog rotate custom %F
@@ -214,6 +230,7 @@ Name[fr]=Rotation personnalisée
 Name[es]=Giro personalizado
 Name[fa]=چرخش سفارشی
 Name[ru]=Произвольный поворот
+Name[zh_CN]=自定义旋转
 
 [Desktop Action auto]
 Exec=reimage-kdialog rotate auto %F
@@ -225,6 +242,7 @@ Name[fr]=Rotation automatique (Exif)
 Name[es]=Giro automático (Exif)
 Name[fa]=چرخش خودکار (Exif)
 Name[ru]=Автоповорот (Exif)
+Name[zh_CN]=自动旋转 (Exif)
 
 ################################################################################
 
@@ -238,6 +256,7 @@ Name[fr]=Retourner verticalement
 Name[es]=Voltear verticalmente
 Name[fa]=واژگونی عمودی
 Name[ru]=Отразить вертикально
+Name[zh_CN]=垂直翻转
 
 [Desktop Action flop]
 Exec=reimage-kdialog overturn flop %F
@@ -249,3 +268,4 @@ Name[fr]=Retourner horizontalement
 Name[es]=Voltear horizontalmente
 Name[fa]=واژگونی افقی
 Name[ru]=Отразить горизонтально
+Name[zh_CN]=水平翻转

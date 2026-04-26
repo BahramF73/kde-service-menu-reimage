@@ -29,6 +29,7 @@ X-KDE-Submenu[de]=ReImage - Metadaten
 X-KDE-Submenu[fr]=ReImage - Métadonnées
 X-KDE-Submenu[es]=ReImage - Metadatos
 X-KDE-Submenu[fa]=ReImage - متادیتا
+X-KDE-Submenu[zh_CN]=ReImage - 元数据
 X-KDE-Submenu[ru]=ReImage - Метаданные
 
 ################################################################################
@@ -42,6 +43,7 @@ Name[de]=Nach Exif-Datum umbenennen
 Name[fr]=Renommer selon la date Exif
 Name[es]=Renombrar según la fecha Exif
 Name[fa]=تغییر نام بر اساس تاریخ Exif
+Name[zh_CN]=按 Exif 日期重命名
 Name[ru]=Переименовать по дате Exif
 
 [Desktop Action rff]
@@ -53,6 +55,7 @@ Name[de]=Nach Dateidatum umbenennen
 Name[fr]=Renommer selon la date du fichier
 Name[es]=Renombrar según la fecha del archivo
 Name[fa]=تغییر نام بر اساس تاریخ فایل
+Name[zh_CN]=按文件日期重命名
 Name[ru]=Переименовать по дате файла
 
 ################################################################################
@@ -66,6 +69,7 @@ Name[de]=Dateidatum anhand von Exif setzen
 Name[fr]=Régler la date du fichier sur la date Exif
 Name[es]=Establecer fecha del archivo desde Exif
 Name[fa]=تنظیم تاریخ فایل از Exif
+Name[zh_CN]=从 Exif 设置文件日期
 Name[ru]=Установить дату файла из Exif
 
 [Desktop Action sffn]
@@ -77,6 +81,7 @@ Name[de]=Dateidatum anhand des Namens setzen
 Name[fr]=Régler la date du fichier sur le nom
 Name[es]=Establecer fecha del archivo desde el nombre
 Name[fa]=تنظیم تاریخ فایل از نام
+Name[zh_CN]=从文件名设置文件日期
 Name[ru]=Установить дату файла из имени
 
 ################################################################################
@@ -90,6 +95,7 @@ Name[de]=Exif-Datum anhand des Dateidatums setzen
 Name[fr]=Régler la date Exif sur la date du fichier
 Name[es]=Establecer fecha Exif desde el archivo
 Name[fa]=تنظیم تاریخ Exif از فایل
+Name[zh_CN]=从文件设置 Exif 日期
 Name[ru]=Установить дату Exif из файла
 
 [Desktop Action sefn]
@@ -101,6 +107,7 @@ Name[de]=Exif-Datum anhand des Namens setzen
 Name[fr]=Régler la date Exif sur le nom
 Name[es]=Establecer fecha Exif desde el nombre
 Name[fa]=تنظیم تاریخ Exif از نام
+Name[zh_CN]=从文件名设置 Exif 日期
 Name[ru]=Установить дату Exif из имени
 
 ################################################################################
@@ -114,6 +121,7 @@ Name[de]=Kommentar hinzufügen
 Name[fr]=Ajouter un commentaire
 Name[es]=Añadir comentario
 Name[fa]=افزودن یادداشت
+Name[zh_CN]=添加注释
 Name[ru]=Добавить комментарий
 
 [Desktop Action view-metadata]
@@ -125,6 +133,7 @@ Name[de]=Metadaten anzeigen
 Name[fr]=Voir les métadonnées
 Name[es]=Ver metadatos
 Name[fa]=مشاهده متادیتا
+Name[zh_CN]=查看元数据
 Name[ru]=Просмотреть метаданные
 
 [Desktop Action extract-metadata]
@@ -136,6 +145,7 @@ Name[de]=Metadaten in Datei extrahieren
 Name[fr]=Extraire les métadonnées vers un fichier
 Name[es]=Extraer metadatos a un archivo
 Name[fa]=استخراج متادیتا به فایل
+Name[zh_CN]=提取元数据到文件
 Name[ru]=Извлечь метаданные в файл
 
 ################################################################################
@@ -149,6 +159,7 @@ Name[de]=Kommentarfeld löschen
 Name[fr]=Supprimer le champ commentaire
 Name[es]=Eliminar campo de comentario
 Name[fa]=حذف فیلد یادداشت
+Name[zh_CN]=删除注释字段
 Name[ru]=Удалить поле комментария
 
 [Desktop Action del-exif]
@@ -160,6 +171,7 @@ Name[de]=Exif-Bereich entfernen
 Name[fr]=Supprimer la section Exif
 Name[es]=Eliminar sección Exif
 Name[fa]=حذف بخش Exif
+Name[zh_CN]=清除 Exif 部分
 Name[ru]=Очистить секцию Exif
 
 [Desktop Action del-iptc]
@@ -171,6 +183,7 @@ Name[de]=IPTC-Bereich löschen
 Name[fr]=Supprimer la section IPTC
 Name[es]=Eliminar sección IPTC
 Name[fa]=حذف بخش IPTC
+Name[zh_CN]=删除 IPTC 部分
 Name[ru]=Удалить секцию IPTC
 
 [Desktop Action del-xmp]
@@ -182,6 +195,7 @@ Name[de]=XMP-Bereich löschen
 Name[fr]=Supprimer la section XMP
 Name[es]=Eliminar sección XMP
 Name[fa]=حذف بخش XMP
+Name[zh_CN]=删除 XMP 部分
 Name[ru]=Удалить секцию XMP
 
 [Desktop Action del-all]
@@ -193,6 +207,7 @@ Name[de]=Alle Metadaten entfernen
 Name[fr]=Supprimer toutes les données inutiles
 Name[es]=Eliminar todos los datos innecesarios
 Name[fa]=حذف تمام متادیتای غیرضروری
+Name[zh_CN]=删除所有不必要的数据
 Name[ru]=Удалить все метаданные
 
 ################################################################################
@@ -206,4 +221,5 @@ Name[de]=Zeitstempel aus Exif hinzufügen
 Name[fr]=Ajouter l'horodatage à partir d'Exif
 Name[es]=Añadir marca de tiempo desde Exif
 Name[fa]=افزودن برچسب زمان از Exif
+Name[zh_CN]=从 Exif 添加时间戳
 Name[ru]=Добавить отметку времени из Exif

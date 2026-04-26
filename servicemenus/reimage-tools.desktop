@@ -29,6 +29,7 @@ X-KDE-Submenu[de]=ReImage - Utilitäten
 X-KDE-Submenu[fr]=ReImage - Outils
 X-KDE-Submenu[es]=ReImage - Herramientas
 X-KDE-Submenu[fa]=ReImage - ابزارها
+X-KDE-Submenu[zh_CN]=ReImage - 工具
 X-KDE-Submenu[ru]=ReImage - Инструменты
 
 ################################################################################
@@ -42,6 +43,7 @@ Name[de]=Animierte GIF erstellen
 Name[fr]=Créer un GIF animé
 Name[es]=Crear GIF animado
 Name[fa]=تولید GIF متحرک
+Name[zh_CN]=生成动画 GIF
 Name[ru]=Создать анимированный GIF
 
 [Desktop Action append-right]
@@ -53,6 +55,7 @@ Name[de]=Nach rechts anhängen
 Name[fr]=Ajouter à droite
 Name[es]=Añadir a la derecha
 Name[fa]=پیوست به راست
+Name[zh_CN]=右侧追加
 Name[ru]=Прикрепить справа
 
 ################################################################################
@@ -66,6 +69,7 @@ Name[de]=Graustufen
 Name[fr]=Niveaux de gris
 Name[es]=Escala de grises
 Name[fa]=سیاه و سفید
+Name[zh_CN]=灰度
 Name[ru]=Оттенки серого
 
 [Desktop Action sepia]
@@ -77,6 +81,7 @@ Name[de]=Sepia
 Name[fr]=Sépia
 Name[es]=Sepia
 Name[fa]=سپیا
+Name[zh_CN]=棕褐色
 Name[ru]=Сепия
 
 [Desktop Action transparent2color]
@@ -88,6 +93,7 @@ Name[de]=Transparenz in Farbe ändern
 Name[fr]=Changer la transparence en couleur
 Name[es]=Cambiar transparencia a color
 Name[fa]=تغییر شفافیت به رنگ
+Name[zh_CN]=将透明度更改为颜色
 Name[ru]=Заменить прозрачность цветом
 
 ################################################################################
@@ -101,6 +107,7 @@ Name[de]=Farbigen Rand hinzufügen
 Name[fr]=Ajouter une bordure colorée
 Name[es]=Añadir borde coloreado
 Name[fa]=افزودن حاشیه رنگی
+Name[zh_CN]=添加彩色边框
 Name[ru]=Добавить цветную рамку
 
 [Desktop Action border-transparent]
@@ -112,6 +119,7 @@ Name[de]=Transparenten Rand hinzufügen
 Name[fr]=Ajouter una bordure transparente
 Name[es]=Añadir borde transparente
 Name[fa]=افزودن حاشیه شفاف
+Name[zh_CN]=添加透明边框
 Name[ru]=Добавить прозрачную рамку
 
 [Desktop Action shadow]
@@ -123,4 +131,5 @@ Name[de]=Schlagschatten hinzufügen
 Name[fr]=Ajouter une ombre portée
 Name[es]=Añadir sombra paralela
 Name[fa]=افزودن سایه
+Name[zh_CN]=添加阴影
 Name[ru]=Добавить тень

@@ -866,6 +866,126 @@ load_language_ru () {
 	msg_base64_finish_title="Конвертация \"${name}\" в Base64"
 }
 
+load_language_zh () {
+	msg_common_software_not_found_title="软件未找到"
+	msg_common_mogrify_not_found_text="找不到 ImageMagick 软件！请安装它。"
+	msg_common_convert_not_found_text="找不到 ImageMagick 软件！请安装它。"
+	msg_common_montage_not_found_text="找不到 ImageMagick 软件！请安装它。"
+	msg_common_jhead_not_found_text="找不到 jhead 软件！请安装它。"
+	msg_common_webp_not_found_text="找不到 webp 软件！请安装它。"
+	msg_common_action_not_found_text="请求的操作尚未实现。"
+	msg_common_overwrite_text="如果保存的图像与正在处理的图像同名，${new_line}您要覆盖它们吗？"
+	msg_common_abort="操作被用户中断。"
+	msg_common_file_not_found="文件 \"${name}\" 未找到！"
+	msg_common_name_error="文件名 \"${name}\" 与识别的日期格式不匹配。${new_line}${new_line}名称必须为：YYYY-MM-DD_HHMMSS.jpg"
+	msg_common_start="正在初始化 ... "
+	msg_common_progress_text="正在处理第 $processed 个文件，共 $quantity 个 ($(basename "${input}"))"
+	msg_common_finish_ok="完成。"
+	msg_common_finish_error="发生错误。"
+	msg_common_transparent_unsupported_text="JPEG 格式不支持透明度。${new_line}转换为 PNG 文件。"
+
+	msg_agif_title="将文件转换为动画 GIF"
+	msg_agif_delay_input_text="输入每一帧的持续时间（以百分之一秒为单位）：${new_line}(100 = 1 秒)"
+	msg_agif_loop_input_text="您想要循环播放吗？"
+	msg_agif_cicles_number_input_text="输入动画重复次数："
+	msg_agif_finish_title="将文件转换为动画 GIF"
+
+	msg_border_title="添加边框"
+	msg_border_size_input_text="以百分比或像素输入边框大小。${new_line}${new_line}有效值可以是：10% 或 50"
+	msg_border_finish_title="为 \"${name}\" 添加边框"
+
+	msg_colorspace_title="将色彩空间更改为 \"${value}\""
+	msg_colorspace_finish_title="更改 \"${name}\" 的色彩空间"
+
+	msg_compress_title="以质量 \"${value}\" 压缩图像"
+	msg_compress_quality_input_text="输入质量："
+	msg_compress_finish_title="压缩 \"${name}\""
+
+	msg_convert_title="将文件转换为 \"${value}\" 格式"
+	msg_convert_format_input_text="输入您想要的格式。${new_line}您可以从控制台获取完整列表：mogrify -list format${new_line}或查阅 ImageMagick 手册。"
+	msg_convert_finish_title="转换 \"${name}\""
+
+	msg_favicons_title="生成网站图标"
+	msg_favicons_finish_title="从 \"${name}\" 生成网站图标"
+
+	msg_montage_title="追加图像"
+	msg_montage_finish_title="将图像追加到 \"${name}\""
+
+	msg_optimize_title="网页优化"
+	msg_optimize_finish_title="优化 \"${name}\""
+
+	msg_overturn_title="将文件翻转为 \"${value}\""
+	msg_overturn_finish_title="翻转 \"${name}\""
+
+	msg_resize_title="调整图像大小 \"${value}\""
+	msg_resize_scale_input_text="输入百分比缩放因子或每个方向所需的最大尺寸。${new_line}您可以选择百分比或像素大小。${new_line}${new_line}有效值可以是：30% 或 1024x768"
+	msg_resize_finish_title="调整 \"${name}\" 的大小"
+
+	msg_rotate_title="以 \"${value}\" 角度旋转文件"
+	msg_rotate_angle_input_text="输入所需的旋转角度："
+	msg_rotate_finish_title="旋转 \"${name}\""
+
+	msg_sepia_title="棕褐色滤镜"
+	msg_sepia_finish_title="对 \"${name}\" 使用棕褐色滤镜"
+
+	msg_shadow_title="添加阴影"
+	msg_shadow_finish_title="为 \"${name}\" 添加阴影"
+
+	msg_timestamp_title="添加时间戳"
+	msg_timestamp_finish_title="为 \"${name}\" 添加时间戳"
+
+	msg_transparent2color_title="将透明更改为颜色"
+	msg_transparent2color_finish_title="更改 \"${name}\" 的透明度为颜色"
+
+	msg_rfe_title="从 Exif 元数据重命名文件"
+	msg_rfe_no_metadata="图像可能不包含元数据。"
+	msg_rfe_finish_title="重命名文件 \"${name}\""
+
+	msg_rff_title="从文件日期重命名文件"
+	msg_rff_finish_title="重命名文件 \"${name}\""
+
+	msg_sffe_title="从 Exif 元数据设置文件日期"
+	msg_sffe_no_metadata="图像可能不包含元数据。"
+	msg_sffe_finish_title="设置 \"${name}\" 的日期"
+
+	msg_sffn_title="从文件名设置文件日期"
+	msg_sffn_finish_title="设置 \"${name}\" 的日期"
+
+	msg_seff_title="从文件日期设置 Exif 日期"
+	msg_seff_finish_title="设置 \"${name}\" 的日期"
+
+	msg_sefn_title="从文件名设置 Exif 日期"
+	msg_sefn_finish_title="设置 \"${name}\" 的日期"
+
+	msg_ac_title="添加注释"
+	msg_ac_comment_input_text="输入要添加的注释："
+	msg_ac_finish_title="在 \"${name}\" 中添加注释"
+
+	msg_ve_title="查看元数据"
+	msg_ve_finish_title="查看 \"${name}\" 的元数据"
+
+	msg_ee_title="提取元数据"
+	msg_ee_finish_title="从 \"${name}\" 提取元数据"
+
+	msg_dc_title="删除注释"
+	msg_dc_finish_title="删除 \"${name}\" 的注释"
+
+	msg_de_title="清除 Exif 部分"
+	msg_de_finish_title="清除 \"${name}\" 的 Exif 部分"
+
+	msg_di_title="删除 IPTC 部分"
+	msg_di_finish_title="删除 \"${name}\" 的 IPTC 部分"
+
+	msg_dx_title="删除 XMP 部分"
+	msg_dx_finish_title="删除 \"${name}\" 的 XMP 部分"
+
+	msg_purejpg_title="删除所有不必要的数据"
+	msg_purejpg_finish_title="删除 \"${name}\" 的所有不必要数据"
+
+	msg_base64_title="转换为 Base64"
+	msg_base64_finish_title="将 \"${name}\" 转换为 Base64"
+}
+
 load_language () {
 	## Load localized strings AFTER english strings
 	## - if localized strings not found use english for default
@@ -894,6 +1014,9 @@ load_language () {
 			;;
 		ru*)
 			load_language_ru
+			;;
+		zh*)
+			load_language_zh
 			;;
 	esac
 }
