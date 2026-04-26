@@ -2,6 +2,12 @@ kde-service-menu-reimage (2.6) unstable; urgency=medium
 
   * Added support for KDE Plasma 6
   * Added "Create animated GIF from a set of images" feature
+  * Added "Convert to Base64" feature integrated into the main script
+  * Refactored binary detection with ImageMagick 7 (magick) support
+  * Optimized script performance (reduced redundant localization calls)
+  * Modernized .desktop icons for a premium Plasma 6 experience
+  * Enhanced install.sh with real-time dependency checks
+  * Fixed bug in run_timestamp using hardcoded test file
   * Modernized installation and uninstallation scripts
   * Updated copyright years to 2007-2026
 

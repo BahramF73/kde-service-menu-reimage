@@ -24,14 +24,15 @@ A powerful and comprehensive KDE Plasma 6 Service Menu for advanced image manipu
 *   **Animated GIF**: Create animations from multiple selected images.
 *   **Favicons**: Generate a complete set of web favicons.
 *   **Montage**: Append/Montage pictures together.
+*   **Base64**: Convert images to Base64 strings for web embedding.
 
 ## 📋 Requirements
 
 To use all features, ensure the following tools are installed:
-*   `ImageMagick` (required for conversion, resizing, etc.)
+*   `ImageMagick` (v6 or v7 - required for conversion, resizing, etc.)
 *   `jhead` (required for Exif metadata operations)
-*   `webp` (required for WebP support)
 *   `kdialog` (for GUI interactions)
+*   `qdbus` (part of qt6-tools or qt5-tools)
 
 ## 🚀 Installation
 
