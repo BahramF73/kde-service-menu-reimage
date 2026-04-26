@@ -14,6 +14,16 @@ else
     exit 1
 fi
 
+# Check for dependencies
+echo "Checking dependencies..."
+if ! command -v magick >/dev/null 2>&1 && ! command -v convert >/dev/null 2>&1; then
+    echo "⚠️  WARNING: ImageMagick (magick or convert) not found! Most actions will not work."
+fi
+
+if ! command -v jhead >/dev/null 2>&1; then
+    echo "⚠️  WARNING: jhead not found! Metadata actions will not work."
+fi
+
 # Determine if running as root
 if [[ $EUID -eq 0 ]]; then
     echo "Installing system-wide KDE service menu..."

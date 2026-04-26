@@ -656,13 +656,13 @@ run_convert () {
 run_favicons () {
 	dest_dir="${base}-favicons"
 
-	wxh=$(convert "${input}" -format "%w x %h" info:)
+	wxh=$("${convert_bin}" "${input}" -format "%w x %h" info:)
 	w=${wxh%% *}
 	h=${wxh##* }
 	max=$(( w > h ? w : h ))
 
 	SOURCE_IMG="${base}_square.png"
-	convert "${input}" -background transparent \
+	"${convert_bin}" "${input}" -background transparent \
 		-compose Copy -gravity center -extent ${max}x${max} "${SOURCE_IMG}"
 
 	PLATFORMS=(ANDROID APPLE FAVICON MS)
@@ -755,11 +755,8 @@ EOF
 }
 
 run_montage () {
-	msg=$(convert "${img_to_add}" -format "%h" info: 2>&1)
-	code=$?
-	[ $code -gt 0 ] && return $code
-
-	height=$(convert "${input}" -format "%h" info: 2>&1)
+	msg=$("${convert_bin}" "${img_to_add}" -format "%h" info: 2>&1)
+	height=$("${convert_bin}" "${input}" -format "%h" info: 2>&1)
 	msg=$("${montage_bin}" "${input}" -resize x${height} "${img_to_add}" -geometry +0+0 "${dir}/${base}_${img_to_add_base}.${ext}" 2>&1)
 	return $?
 }
@@ -821,7 +818,7 @@ run_shadow () {
 }
 
 run_timestamp () {
-	timestamp=$(jhead -exifmap 01.jpg | grep "Date/Time" | sed "s/^[^:]*:[[:blank:]]*\([[:digit:]]\{4\}\):\([[:digit:]]\{2\}\):\([[:digit:]]\{2\}\)/\1-\2-\3/")
+	timestamp=$("${jhead_bin}" -exifmap "${input}" | grep "Date/Time" | sed "s/^[^:]*:[[:blank:]]*\([[:digit:]]\{4\}\):\([[:digit:]]\{2\}\):\([[:digit:]]\{2\}\)/\1-\2-\3/")
 
 	if [ "${overwrite}" = true ]; then
 		msg=$("${convert_bin}" "${input}" -gravity SouthEast -pointsize 30 -fill white -annotate +30+30 "${timestamp}" "${input}" 2>&1)
@@ -991,7 +988,6 @@ manage_input_separately () {
 		ext="${name##*.}"
 
 		processed=$(($processed + 1))
-		load_language
 
 		[ ! -f "${input}" ] && "${kdialog_bin}" --title --icon configure "${!msg_title}" --error "${msg_common_file_not_found}" && break
 		"${qdbus_bin}" $dbus_ref setLabelText "${msg_common_progress_text}"
@@ -1012,7 +1008,6 @@ manage_input_at_once () {
 
 	dir=$(dirname -- "${1}")
 	name="${1##*/}"
-	load_language
 
 	msg_finish_title=msg_${action}_finish_title
 	run_${action} "${@}" && \
@@ -1293,31 +1288,39 @@ set_base64 () {
 
 [ "${1}" = "-h" ] || [ "${1}" = "--help" ] || [ ${#} -lt 2 ] && help
 
-kdialog_bin=$(which kdialog)
+kdialog_bin=$(command -v kdialog)
 [ -z "${kdialog_bin}" ] && echo "kdialog not found!" && exit 1
 
-qdbus_bin=$(which qdbus6)
-[ -z "${qdbus_bin}" ] && qdbus_bin=$(which qdbus)
+qdbus_bin=$(command -v qdbus6)
+[ -z "${qdbus_bin}" ] && qdbus_bin=$(command -v qdbus)
 [ -z "${qdbus_bin}" ] && \
 	"${kdialog_bin}" --icon configure --title "${msg_common_software_not_found_title}" --error "Software qdbus or qdbus6 not found! Please, install it." && exit 1
 
-mogrify_bin=$(which mogrify)
+magick_bin=$(command -v magick)
+if [ -n "${magick_bin}" ]; then
+	mogrify_bin="${magick_bin} mogrify"
+	convert_bin="${magick_bin}"
+	montage_bin="${magick_bin} montage"
+else
+	mogrify_bin=$(command -v mogrify)
+	convert_bin=$(command -v convert)
+	montage_bin=$(command -v montage)
+fi
+
 [ -z "${mogrify_bin}" ] && \
 	"${kdialog_bin}" --icon configure --title "${msg_common_software_not_found_title}" --error "${msg_common_mogrify_not_found_text}" && exit 2
 
-convert_bin=$(which convert)
 [ -z "${convert_bin}" ] && \
 	"${kdialog_bin}" --icon configure --title "${msg_common_software_not_found_title}" --error "${msg_common_convert_not_found_text}" && exit 2
 
-montage_bin=$(which montage)
 [ -z "${montage_bin}" ] && \
 	"${kdialog_bin}" --icon configure --title "${msg_common_software_not_found_title}" --error "${msg_common_montage_not_found_text}" && exit 2
 
-jhead_bin=$(which jhead)
+jhead_bin=$(command -v jhead)
 [ -z "${jhead_bin}" ] && \
 	"${kdialog_bin}" --title "${msg_common_software_not_found_title}" --icon configure --error "${msg_common_jhead_not_found_text}" && exit 2
 
-webp_bin=$(which webpinfo)
+webp_bin=$(command -v webpinfo)
 [ -z "${webp_bin}" ] && \
 	"${kdialog_bin}" --title "${msg_common_software_not_found_title}" --icon configure --error "${msg_common_webp_not_found_text}" && exit 2
 

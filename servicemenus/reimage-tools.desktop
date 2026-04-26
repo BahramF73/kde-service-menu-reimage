@@ -36,7 +36,7 @@ Name[it]=Crea GIF animata
 
 [Desktop Action append-right]
 Exec=reimage-kdialog montage %F
-Icon=image-flip-horizontal-symbolic
+Icon=image-stack
 Name=Append to right
 Name[it]=Appendi immagine a destra
 
@@ -44,7 +44,7 @@ Name[it]=Appendi immagine a destra
 
 [Desktop Action gray]
 Exec=reimage-kdialog colorspace gray %F
-Icon=viewimage
+Icon=color-management
 Name=GrayScale
 Name[it]=Scala di grigi
 
@@ -56,7 +56,7 @@ Name[it]=Seppia
 
 [Desktop Action transparent2color]
 Exec=reimage-kdialog transparent2color %F
-Icon=backgroundtool
+Icon=color-management
 Name=Change transparent to color
 Name[it]=Cambia trasparenza a colore
 
@@ -64,18 +64,18 @@ Name[it]=Cambia trasparenza a colore
 
 [Desktop Action border]
 Exec=reimage-kdialog border custom %F
-Icon=bordertool
+Icon=border-all
 Name=Add colored border
 Name[it]=Aggiungi bordo colorato
 
 [Desktop Action border-transparent]
 Exec=reimage-kdialog border transparent %F
-Icon=box
+Icon=border-all
 Name=Add transparent border
 Name[it]=Aggiungi bordo trasparente
 
 [Desktop Action shadow]
 Exec=reimage-kdialog shadow %F
-Icon=bwtonal
+Icon=image-filter
 Name=Drop shadow
 Name[it]=Aggiungi ombra

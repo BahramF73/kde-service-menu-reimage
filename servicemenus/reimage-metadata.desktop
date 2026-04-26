@@ -44,13 +44,13 @@ Name[it]=Rinomina dalla data del file
 
 [Desktop Action sffe]
 Exec=reimage-kdialog sffe %F
-Icon=knotes_date
+Icon=appointment-new
 Name=Set file date from Exif date
 Name[it]=Imposta la data del file a quella Exif
 
 [Desktop Action sffn]
 Exec=reimage-kdialog sffn %F
-Icon=knotes_date
+Icon=appointment-new
 Name=Set file date from file's name
 Name[it]=Imposta la data del file a quella del nome
 
@@ -58,13 +58,13 @@ Name[it]=Imposta la data del file a quella del nome
 
 [Desktop Action seff]
 Exec=reimage-kdialog seff %F
-Icon=knotes_date
+Icon=appointment-new
 Name=Set Exif date from file's date
 Name[it]=Imposta la data Exif a quella del file
 
 [Desktop Action sefn]
 Exec=reimage-kdialog sefn %F
-Icon=knotes_date
+Icon=appointment-new
 Name=Set Exif date from file's name
 Name[it]=Imposta la data Exif a quella del nome
 
@@ -72,19 +72,19 @@ Name[it]=Imposta la data Exif a quella del nome
 
 [Desktop Action add-comment]
 Exec=reimage-kdialog ac %F
-Icon=knotes_date
+Icon=comment
 Name=Add comment
 Name[it]=Aggiungi un commento
 
 [Desktop Action view-metadata]
 Exec=reimage-kdialog ve %F
-Icon=knotes_date
+Icon=document-properties
 Name=View metadata
 Name[it]=Visualizza metadati
 
 [Desktop Action extract-metadata]
 Exec=reimage-kdialog ee %F
-Icon=knotes_date
+Icon=document-export
 Name=Extract metadata to file
 Name[it]=Estrai metadati in un file
 
@@ -92,31 +92,31 @@ Name[it]=Estrai metadati in un file
 
 [Desktop Action del-comment]
 Exec=reimage-kdialog dc %F
-Icon=knotes_date
+Icon=edit-delete
 Name=Delete comment field
 Name[it]=Cancella commento
 
 [Desktop Action del-exif]
 Exec=reimage-kdialog de %F
-Icon=knotes_date
+Icon=edit-delete
 Name=Strip Exif section
 Name[it]=Cancella le informazioni Exif
 
 [Desktop Action del-iptc]
 Exec=reimage-kdialog di %F
-Icon=knotes_date
+Icon=edit-delete
 Name=Delete IPTC section
 Name[it]=Cancella le informazioni IPTC
 
 [Desktop Action del-xmp]
 Exec=reimage-kdialog dx %F
-Icon=knotes_date
+Icon=edit-delete
 Name=Delete XMP section
 Name[it]=Cancella le informazioni XMP
 
 [Desktop Action del-all]
 Exec=reimage-kdialog purejpg %F
-Icon=knotes_date
+Icon=edit-delete
 Name=Strip all unnecessary data
 Name[it]=Cancella tutti i metadati
 
@@ -124,6 +124,6 @@ Name[it]=Cancella tutti i metadati
 
 [Desktop Action tfe]
 Exec=reimage-kdialog timestamp %F
-Icon=knotes_date
+Icon=tag
 Name=Add timestamp from Exif
 Name[it]=Aggiungi timestamp da Exif
