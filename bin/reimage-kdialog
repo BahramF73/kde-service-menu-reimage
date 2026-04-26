@@ -1106,6 +1106,126 @@ load_language_ja () {
 	msg_base64_finish_title="\"${name}\" を Base64 に変換"
 }
 
+load_language_pl () {
+	msg_common_software_not_found_title="Nie znaleziono oprogramowania"
+	msg_common_mogrify_not_found_text="Nie znaleziono oprogramowania ImageMagick! Proszę je zainstalować."
+	msg_common_convert_not_found_text="Nie znaleziono oprogramowania ImageMagick! Proszę je zainstalować."
+	msg_common_montage_not_found_text="Nie znaleziono oprogramowania ImageMagick! Proszę je zainstalować."
+	msg_common_jhead_not_found_text="Nie znaleziono oprogramowania jhead! Proszę je zainstalować."
+	msg_common_webp_not_found_text="Nie znaleziono oprogramowania webp! Proszę je zainstalować."
+	msg_common_action_not_found_text="Żądana akcja nie została zaimplementowana."
+	msg_common_overwrite_text="Jeśli zapisywane obrazy mają taką samą nazwę jak te przetwarzane,${new_line}czy chcesz je nadpisać?"
+	msg_common_abort="Operacja przerwana przez użytkownika."
+	msg_common_file_not_found="Nie znaleziono pliku \"${name}\"!"
+	msg_common_name_error="Nazwa pliku \"${name}\" nie pasuje do rozpoznanego formatu daty.${new_line}${new_line}Nazwa musi być typu: YYYY-MM-DD_HHMMSS.jpg"
+	msg_common_start="Inicjalizacja ... "
+	msg_common_progress_text="Przetwarzanie pliku $processed z $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="Zakończono."
+	msg_common_finish_error="Wystąpił błąd."
+	msg_common_transparent_unsupported_text="Format JPEG nie obsługuje przezroczystości.${new_line}Konwersja do pliku PNG."
+
+	msg_agif_title="Konwertuj pliki do animowanego GIF-a"
+	msg_agif_delay_input_text="Wprowadź czas trwania każdej klatki w setnych częściach sekundy:${new_line}(100 = 1 sekunda)"
+	msg_agif_loop_input_text="Czy chcesz odtwarzanie w pętli?"
+	msg_agif_cicles_number_input_text="Wpisz liczbę powtórzeń animacji:"
+	msg_agif_finish_title="Konwertuj pliki do animowanego GIF-a"
+
+	msg_border_title="Dodaj ramkę"
+	msg_border_size_input_text="Wpisz rozmiar ramki w procentach lub pikselach.${new_line}${new_line}Prawidłowe wartości to np.: 10% lub 50"
+	msg_border_finish_title="Dodawanie ramki do \"${name}\""
+
+	msg_colorspace_title="Zmiana przestrzeni barw na \"${value}\""
+	msg_colorspace_finish_title="Zmiana przestrzeni barw pliku \"${name}\""
+
+	msg_compress_title="Kompresja obrazu z jakością \"${value}\""
+	msg_compress_quality_input_text="Wpisz jakość:"
+	msg_compress_finish_title="Kompresja \"${name}\""
+
+	msg_convert_title="Konwertuj plik do formatu \"${value}\""
+	msg_convert_format_input_text="Wpisz żądany format.${new_line}Pełną listę możesz uzyskać w konsoli wpisując: mogrify -list format${new_line}lub sprawdzając podręcznik ImageMagick."
+	msg_convert_finish_title="Konwersja \"${name}\""
+
+	msg_favicons_title="Generowanie ikon stron (favicons)"
+	msg_favicons_finish_title="Generowanie ikon ze strony \"${name}\""
+
+	msg_montage_title="Dołącz obraz"
+	msg_montage_finish_title="Dołączanie obrazu do \"${name}\""
+
+	msg_optimize_title="Optymalizacja dla stron www"
+	msg_optimize_finish_title="Optymalizacja \"${name}\""
+
+	msg_overturn_title="Obróć plik do \"${value}\""
+	msg_overturn_finish_title="Obracanie \"${name}\""
+
+	msg_resize_title="Zmiana rozmiaru obrazu na \"${value}\""
+	msg_resize_scale_input_text="Wpisz współczynnik skalowania w procentach lub żądany maksymalny rozmiar dla każdego kierunku.${new_line}Możesz wybrać procent lub rozmiar w pikselach.${new_line}${new_line}Prawidłowe wartości to np.: 30% lub 1024x768"
+	msg_resize_finish_title="Zmiana rozmiaru \"${name}\""
+
+	msg_rotate_title="Obróć plik o kąt \"${value}\""
+	msg_rotate_angle_input_text="Wprowadź żądany kąt obrotu:"
+	msg_rotate_finish_title="Obracanie \"${name}\""
+
+	msg_sepia_title="Filtr sepia"
+	msg_sepia_finish_title="Filtr sepia na \"${name}\""
+
+	msg_shadow_title="Cień"
+	msg_shadow_finish_title="Cień na \"${name}\""
+
+	msg_timestamp_title="Dodaj znacznik czasu"
+	msg_timestamp_finish_title="Dodawanie znacznika czasu do \"${name}\""
+
+	msg_transparent2color_title="Zmień przezroczystość na kolor"
+	msg_transparent2color_finish_title="Zmiana przezroczystości na kolor pliku \"${name}\""
+
+	msg_rfe_title="Zmień nazwę pliku na podstawie danych Exif"
+	msg_rfe_no_metadata="Obraz może non zawierać metadanych."
+	msg_rfe_finish_title="Zmiana nazwy pliku \"${name}\""
+
+	msg_rff_title="Zmień nazwę pliku na podstawie daty pliku"
+	msg_rff_finish_title="Zmiana nazwy pliku \"${name}\""
+
+	msg_sffe_title="Ustaw datę pliku na podstawie danych Exif"
+	msg_sffe_no_metadata="Obraz może non zawierać metadanych."
+	msg_sffe_finish_title="Ustawianie daty pliku \"${name}\""
+
+	msg_sffn_title="Ustaw datę pliku na podstawie nazwy pliku"
+	msg_sffn_finish_title="Ustawianie daty pliku \"${name}\""
+
+	msg_seff_title="Ustaw datę Exif na podstawie daty pliku"
+	msg_seff_finish_title="Ustawianie daty pliku \"${name}\""
+
+	msg_sefn_title="Ustaw datę Exif na podstawie nazwy pliku"
+	msg_sefn_finish_title="Ustawianie daty pliku \"${name}\""
+
+	msg_ac_title="Dodaj komentarz"
+	msg_ac_comment_input_text="Wpisz komentarz do dodania:"
+	msg_ac_finish_title="Dodawanie komentarza do \"${name}\""
+
+	msg_ve_title="Pokaż metadane"
+	msg_ve_finish_title="Pokazywanie metadanych pliku \"${name}\""
+
+	msg_ee_title="Wyodrębnij metadane"
+	msg_ee_finish_title="Wyodrębnianie metadanych z pliku \"${name}\""
+
+	msg_dc_title="Usuń komentarz"
+	msg_dc_finish_title="Usuwanie komentarza z pliku \"${name}\""
+
+	msg_de_title="Wyczyść sekcję Exif"
+	msg_de_finish_title="Wyczyszczenie sekcji Exif z pliku \"${name}\""
+
+	msg_di_title="Usuń sekcję IPTC"
+	msg_di_finish_title="Usuwanie sekcji IPTC z pliku \"${name}\""
+
+	msg_dx_title="Usuń sekcję XMP"
+	msg_dx_finish_title="Usuwanie sekcji XMP z pliku \"${name}\""
+
+	msg_purejpg_title="Usuń wszystkie niepotrzebne dane"
+	msg_purejpg_finish_title="Usuwanie wszystkich niepotrzebnych danych z pliku \"${name}\""
+
+	msg_base64_title="Konwertuj do Base64"
+	msg_base64_finish_title="Konwersja \"${name}\" do Base64"
+}
+
 load_language_pt () {
 	msg_common_software_not_found_title="Software não encontrado"
 	msg_common_mogrify_not_found_text="O software ImageMagick não foi encontrado! Por favor, instale-o."
@@ -1620,6 +1740,9 @@ load_language () {
 			;;
 		ja*)
 			load_language_ja
+			;;
+		pl*)
+			load_language_pl
 			;;
 		pt*)
 			load_language_pt
