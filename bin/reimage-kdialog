@@ -265,6 +265,126 @@ load_language_en_US () {
 	msg_base64_finish_title="Convert to Base64 \"${name}\""
 }
 
+load_language_eo () {
+	msg_common_software_not_found_title="Programaro ne trovita"
+	msg_common_mogrify_not_found_text="La programaro ImageMagick ne estis trovita! Bonvolu instali ĝin."
+	msg_common_convert_not_found_text="La programaro ImageMagick ne estis trovita! Bonvolu instali ĝin."
+	msg_common_montage_not_found_text="La programaro ImageMagick ne estis trovita! Bonvolu instali ĝin."
+	msg_common_jhead_not_found_text="La programaro jhead ne estis trovita! Bonvolu instali ĝin."
+	msg_common_webp_not_found_text="La programaro webp ne estis trovita! Bonvolu instali ĝin."
+	msg_common_action_not_found_text="La petita ago ne estas efektivigita."
+	msg_common_overwrite_text="Se la bildoj konservotaj havas la saman nomon kiel la prilaborataj,${new_line}ĉu vi volas anstataŭigi ilin?"
+	msg_common_abort="Operacio ĉesigita de la uzanto."
+	msg_common_file_not_found="Dosiero \"${name}\" ne trovita!"
+	msg_common_name_error="La dosiernomo \"${name}\" ne kongruas kun rekonita datformato.${new_line}${new_line}La nomo devas esti de tipo: YYYY-MM-DD_HHMMSS.jpg"
+	msg_common_start="Pravalorizo ... "
+	msg_common_progress_text="Prilaborado de dosiero $processed el $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="Farita."
+	msg_common_finish_error="Eraro okazis."
+	msg_common_transparent_unsupported_text="JPEG-formato ne subtenas travideblecon.${new_line}Konvertado al PNG-dosiero."
+
+	msg_agif_title="Konverti dosierojn al animacia GIF"
+	msg_agif_delay_input_text="Enigu la daŭron de ĉiu kadro, en centonoj de sekundo:${new_line}(100 = 1 sekundo)"
+	msg_agif_loop_input_text="Ĉu vi volas buklo-reprodukton?"
+	msg_agif_cicles_number_input_text="Tajpu la nombron de ripetoj de la animacio:"
+	msg_agif_finish_title="Konverti dosierojn al animacia GIF"
+
+	msg_border_title="Aldoni bordon"
+	msg_border_size_input_text="Tajpu la bordon-grandon en procentoj aŭ en pikseloj.${new_line}${new_line}Validaj valoroj povas esti: 10% aŭ 50"
+	msg_border_finish_title="Aldono de bordo al \"${name}\""
+
+	msg_colorspace_title="Ŝanĝante la kolorspacon al \"${value}\""
+	msg_colorspace_finish_title="Ŝanĝante la kolorspacon de \"${name}\""
+
+	msg_compress_title="Bildo-kunpremado kun kvalito \"${value}\""
+	msg_compress_quality_input_text="Tajpu la kvaliton:"
+	msg_compress_finish_title="Kunpremado de \"${name}\""
+
+	msg_convert_title="Konverti dosieron al la formato \"${value}\""
+	msg_convert_format_input_text="Tajpu la formaton, kiun vi deziras.${new_line}Vi povas akiri kompletan liston de la konzolo per: mogrify -list format${new_line}aŭ konsultante la manlibron de ImageMagick."
+	msg_convert_finish_title="Konverto de \"${name}\""
+
+	msg_favicons_title="Generado de retejaj bildetoj (favicons)"
+	msg_favicons_finish_title="Generante retejajn bildetojn el \"${name}\""
+
+	msg_montage_title="Postglui bildon"
+	msg_montage_finish_title="Postglui bildon al \"${name}\""
+
+	msg_optimize_title="Optimigo por la reto"
+	msg_optimize_finish_title="Optimigi \"${name}\""
+
+	msg_overturn_title="Renversi dosieron al \"${value}\""
+	msg_overturn_finish_title="Renversi \"${name}\""
+
+	msg_resize_title="Grandecŝanĝo de bildo \"${value}\""
+	msg_resize_scale_input_text="Tajpu la skalfaktoron en procentoj aŭ la maksimuman grandon deziratan por ĉiu direkto.${new_line}Vi povas elekti procenton aŭ grandon en pikseloj.${new_line}${new_line}Validaj valoroj povas esti: 30% aŭ 1024x768"
+	msg_resize_finish_title="Grandecŝanĝo de \"${name}\""
+
+	msg_rotate_title="Rotacii dosieron kun angulo de \"${value}\""
+	msg_rotate_angle_input_text="Enigu la deziratan rotacian angulon:"
+	msg_rotate_finish_title="Rotacio de \"${name}\""
+
+	msg_sepia_title="Sepia filtrilo"
+	msg_sepia_finish_title="Sepia filtrilo ĉe \"${name}\""
+
+	msg_shadow_title="Ĵetita ombro"
+	msg_shadow_finish_title="Ĵetita ombro ĉe \"${name}\""
+
+	msg_timestamp_title="Aldoni tempomarkon"
+	msg_timestamp_finish_title="Aldoni tempomarkon al \"${name}\""
+
+	msg_transparent2color_title="Ŝanĝi travideblecon al koloro"
+	msg_transparent2color_finish_title="Ŝanĝante travideblecon al koloro de \"${name}\""
+
+	msg_rfe_title="Alinomi dosieron el Exif-metadatenoj"
+	msg_rfe_no_metadata="Eblas, ke la bildo ne enhavas metadatenojn."
+	msg_rfe_finish_title="Alinomi dosieron \"${name}\""
+
+	msg_rff_title="Alinomi dosieron el dosier-dato"
+	msg_rff_finish_title="Alinomi dosieron \"${name}\""
+
+	msg_sffe_title="Agordi dosier-daton el Exif-metadatenoj"
+	msg_sffe_no_metadata="Eblas, ke la bildo ne enhavas metadatenojn."
+	msg_sffe_finish_title="Agordante daton de \"${name}\""
+
+	msg_sffn_title="Agordi dosier-daton el dosier-nomo"
+	msg_sffn_finish_title="Agordante daton de \"${name}\""
+
+	msg_seff_title="Agordi Exif-daton el dosier-dato"
+	msg_seff_finish_title="Agordante daton de \"${name}\""
+
+	msg_sefn_title="Agordi Exif-daton el dosier-nomo"
+	msg_sefn_finish_title="Agordante daton de \"${name}\""
+
+	msg_ac_title="Aldoni komenton"
+	msg_ac_comment_input_text="Tajpu la aldonotan komenton:"
+	msg_ac_finish_title="Aldoni komenton en \"${name}\""
+
+	msg_ve_title="Vidi metadatenojn"
+	msg_ve_finish_title="Vidi metadatenojn de \"${name}\""
+
+	msg_ee_title="Estrakti metadatenojn"
+	msg_ee_finish_title="Estrakti metadatenojn de \"${name}\""
+
+	msg_dc_title="Forigi komenton"
+	msg_dc_finish_title="Forigi komenton de \"${name}\""
+
+	msg_de_title="Vakigi Exif-sekcion"
+	msg_de_finish_title="Vakigi Exif-sekcion el \"${name}\""
+
+	msg_di_title="Forigi IPTC-sekcion"
+	msg_di_finish_title="Forigi IPTC-sekcion el \"${name}\""
+
+	msg_dx_title="Forigi XMP-sekcion"
+	msg_dx_finish_title="Forigi XMP-sekcion el \"${name}\""
+
+	msg_purejpg_title="Forigi ĉiujn nenecesajn datenojn"
+	msg_purejpg_finish_title="Forigi ĉiujn nenecesajn datenojn de \"${name}\""
+
+	msg_base64_title="Konverti al Base64"
+	msg_base64_finish_title="Konverti \"${name}\" al Base64"
+}
+
 load_language_es () {
 	msg_common_software_not_found_title="Software no encontrado"
 	msg_common_mogrify_not_found_text="¡No se encontró el software ImageMagick! Por favor, instálelo."
@@ -1119,6 +1239,9 @@ load_language () {
 	case "${lang}" in
 		de*)
 			load_language_de
+			;;
+		eo*)
+			load_language_eo
 			;;
 		es*)
 			load_language_es
