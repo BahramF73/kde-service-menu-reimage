@@ -1,57 +1,60 @@
-kde-service-menu-reimage
-========================
+# KDE Service Menu Reimage (Plasma 6)
 
-This is a KDE Service Menu for image manipulation and metadata management.
-It adds several useful actions to the Dolphin/Konqueror context menu (right-click)
-for image files.
+A powerful and comprehensive KDE Plasma 6 Service Menu for advanced image manipulation and metadata management directly from Dolphin or Konqueror.
 
-DEPENDENCIES
-------------
+![Version](https://img.shields.io/badge/version-2.6-blue)
+![License](https://img.shields.io/badge/license-GPL--3-green)
 
-To use all features of this service menu, you need the following software installed:
+## 🌟 Features
 
-*   KDE Plasma 5 or 6 (required)
-*   kdialog (required for UI)
-*   ImageMagick (required for conversion, resizing, etc.)
-*   jhead (required for Exif metadata operations)
-*   webp (required for WebP format support)
+### 🖼️ Image Manipulation
+*   **Resize**: Scaled by percentage or specific dimensions.
+*   **Convert**: Transform to any format supported by ImageMagick (WebP, PNG, JPG, etc.).
+*   **Rotate & Flip**: Auto-orient, custom angle, flip, or flop.
+*   **Filters**: Add borders, drop shadows, or sepia effect.
+*   **Optimization**: Advanced auto-optimization for web (strip data, interlace, etc.).
 
-INSTALLATION
-------------
+### 📂 Metadata Management (Exif/IPTC/XMP)
+*   **Rename**: Rename files based on Exif/File date and time.
+*   **Sync**: Set file date from Exif, or Exif date from file date/name.
+*   **Edit**: Add, view, or delete comments and metadata sections.
+*   **Strip**: Remove all metadata for "pure" images.
 
-You can install the service menu either system-wide (for all users) or locally
-(only for the current user).
+### 🛠️ Advanced Tools
+*   **Animated GIF**: Create animations from multiple selected images.
+*   **Favicons**: Generate a complete set of web favicons.
+*   **Montage**: Append/Montage pictures together.
 
-### System-wide Installation (requires sudo)
-Run:
-sudo ./install.sh
+## 📋 Requirements
 
-### Local Installation
-Run:
+To use all features, ensure the following tools are installed:
+*   `ImageMagick` (required for conversion, resizing, etc.)
+*   `jhead` (required for Exif metadata operations)
+*   `webp` (required for WebP support)
+*   `kdialog` (for GUI interactions)
+
+## 🚀 Installation
+
+### Local Installation (Recommended)
+```bash
 ./install.sh
+```
 
+### System-wide Installation
+```bash
+sudo ./install.sh
+```
 
-UNINSTALLATION
---------------
-
-To remove the service menu, run the uninstallation script corresponding to your
-installation method.
-
-### System-wide Uninstallation (requires sudo)
-Run:
-sudo ./uninstall.sh
-
-### Local Uninstallation
-Run:
+## 🗑️ Uninstallation
+```bash
 ./uninstall.sh
+```
 
+## 📄 License
+This project is licensed under the GPL-3 License - see the [doc/copyright](doc/copyright) file for details.
 
-USAGE
------
+## ✉️ Contact
+**Giuseppe Benigno** - [giuseppe.benigno@gmail.com](mailto:giuseppe.benigno@gmail.com)
 
-After installation, the new menu items will appear in the context menu
-(right-click) of image files in Dolphin or Konqueror, typically under the
-"Actions" or "Reimage" submenu.
-
---------------------------------------------------------------------------------
-Copyright (C) 2018-2026 Giuseppe Benigno <giuseppe.benigno@gmail.com>
+---
+*Part of the KDE Service Menu suite.*
