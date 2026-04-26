@@ -25,6 +25,7 @@ TryExec=reimage-kdialog
 Type=Service
 X-KDE-Submenu=ReImage - Convert and rotate
 X-KDE-Submenu[it]=ReImage - Conversione e rotazione
+X-KDE-Submenu[de]=ReImage - Konvertieren und Drehen
 
 ################################################################################
 
@@ -33,30 +34,35 @@ Exec=reimage-kdialog convert gif %F
 Icon=image-gif
 Name=Convert to GIF
 Name[it]=Converti in GIF
+Name[de]=In GIF konvertieren
 
 [Desktop Action jpeg]
 Exec=reimage-kdialog convert jpg %F
 Icon=image-jpeg
 Name=Convert to JPEG
 Name[it]=Converti in JPEG
+Name[de]=In JPEG konvertieren
 
 [Desktop Action png]
 Exec=reimage-kdialog convert png %F
 Icon=image-png
 Name=Convert to PNG
 Name[it]=Converti in PNG
+Name[de]=In PNG konvertieren
 
 [Desktop Action tiff]
 Exec=reimage-kdialog convert tif %F
 Icon=image-tiff
 Name=Convert to TIFF
 Name[it]=Converti in TIFF
+Name[de]=In TIFF konvertieren
 
 [Desktop Action webp]
 Exec=reimage-kdialog convert webp %F
 Icon=image-webp
 Name=Convert to WEBP
 Name[it]=Converti in WEBP
+Name[de]=In WEBP konvertieren
 
 ################################################################################
 
@@ -65,12 +71,14 @@ Exec=reimage-kdialog convert pdf %F
 Icon=application-pdf
 Name=Convert to PDF
 Name[it]=Converti in PDF
+Name[de]=In PDF konvertieren
 
 [Desktop Action pdfa]
 Exec=reimage-kdialog convert pdfa %F
 Icon=application-pdf
 Name=Convert to PDF/A-1
 Name[it]=Converti in PDF/A-1
+Name[de]=In PDF/A-1 konvertieren
 
 ################################################################################
 
@@ -79,30 +87,35 @@ Exec=reimage-kdialog agif all %F
 Icon=video-x-mp4
 Name=Generate animated GIF
 Name[it]=Genera GIF animata
+Name[de]=Animierte GIF erstellen
 
 [Desktop Action favicons]
 Exec=reimage-kdialog favicons all %F
 Icon=image-ico
 Name=Generate favicons
 Name[it]=Genera favicons
+Name[de]=Favicons erstellen
 
 [Desktop Action base64]
 Exec=reimage-kdialog base64 %F
 Icon=text-plain
 Name=Convert to Base64
 Name[it]=Converti in Base64
+Name[de]=In Base64 konvertieren
 
 [Desktop Action convert-custom]
 Exec=reimage-kdialog convert custom %F
 Icon=image
 Name=Convert to format ...
 Name[it]=Formato personalizzato ...
+Name[de]=In Format konvertieren ...
 
 [Desktop Action formats]
 Exec=reimage-kdialog convert formats
 Icon=view-list-text
 Name=Formats list
 Name[it]=Elenco formati
+Name[de]=Formatliste
 
 ################################################################################
 
@@ -111,30 +124,35 @@ Exec=reimage-kdialog rotate 90 %F
 Icon=image-rotate-right-symbolic
 Name=Rotate 90°
 Name[it]=Ruota di 90°
+Name[de]=Um 90° drehen
 
 [Desktop Action rotate-180]
 Exec=reimage-kdialog rotate 180 %F
 Icon=image-rotate-right-symbolic
 Name=Rotate 180°
 Name[it]=Ruota di 180°
+Name[de]=Um 180° drehen
 
 [Desktop Action rotate-270]
 Exec=reimage-kdialog rotate 270 %F
 Icon=image-rotate-left-symbolic
 Name=Rotate (-90°)
 Name[it]=Ruota di -90°
+Name[de]=Um -90° drehen
 
 [Desktop Action rotate-custom]
 Exec=reimage-kdialog rotate custom %F
 Icon=view-refresh
 Name=Rotate custom
 Name[it]=Angolo personalizzato
+Name[de]=Benutzerdefinierte Drehung
 
 [Desktop Action auto]
 Exec=reimage-kdialog rotate auto %F
 Icon=view-refresh
 Name=Auto-rotate with Exif
 Name[it]=Auto-ruota tramite dati Exif
+Name[de]=Automatisch drehen (Exif)
 
 ################################################################################
 
@@ -143,9 +161,11 @@ Exec=reimage-kdialog overturn flip %F
 Icon=image-flip-vertical-symbolic
 Name=Overturn vertically
 Name[it]=Ribalta verticalmente
+Name[de]=Vertikal spiegeln
 
 [Desktop Action flop]
 Exec=reimage-kdialog overturn flop %F
 Icon=image-flip-horizontal-symbolic
 Name=Overturn horizontally
 Name[it]=Ribalta orizzontalmente
+Name[de]=Horizontal spiegeln

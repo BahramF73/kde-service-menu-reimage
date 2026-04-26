@@ -24,6 +24,126 @@
 new_line="
 "
 
+load_language_de () {
+	msg_common_software_not_found_title="Software nicht gefunden"
+	msg_common_mogrify_not_found_text="Software ImageMagick wurde nicht gefunden! Bitte installieren Sie es."
+	msg_common_convert_not_found_text="Software ImageMagick wurde nicht gefunden! Bitte installieren Sie es."
+	msg_common_montage_not_found_text="Software ImageMagick wurde nicht gefunden! Bitte installieren Sie es."
+	msg_common_jhead_not_found_text="Software jhead wurde nicht gefunden! Bitte installieren Sie es."
+	msg_common_webp_not_found_text="Software webp wurde nicht gefunden! Bitte installieren Sie es."
+	msg_common_action_not_found_text="Die angeforderte Aktion ist non implementiert."
+	msg_common_overwrite_text="Falls die zu speichernden Bilder denselben Namen haben wie die zu verarbeitenden,${new_line}möchten Sie diese überschreiben?"
+	msg_common_abort="Vorgang vom Benutzer abgebrochen."
+	msg_common_file_not_found="Datei \"${name}\" nicht gefunden!"
+	msg_common_name_error="Der Dateiname \"${name}\" entspricht keinem erkannten Datumsformat.${new_line}${new_line}Der Name muss vom Typ sein: JJJJ-MM-TT_HHMMSS.jpg"
+	msg_common_start="Initialisierung ... "
+	msg_common_progress_text="Verarbeite Datei $processed von $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="Fertig."
+	msg_common_finish_error="Ein Fehler ist aufgetreten."
+	msg_common_transparent_unsupported_text="Das JPEG-Format unterstützt keine Transparenz.${new_line}In PNG-Datei konvertieren."
+
+	msg_agif_title="Dateien in animiertes GIF konvertieren"
+	msg_agif_delay_input_text="Geben Sie die Dauer des Einzelbildes in Hundertstelsekunden ein:${new_line}(100 = 1 Sekunde)"
+	msg_agif_loop_input_text="Möchten Sie eine Endlosschleife?"
+	msg_agif_cicles_number_input_text="Geben Sie die Anzahl der Wiederholungen della Animation ein:"
+	msg_agif_finish_title="Dateien in animiertes GIF konvertieren"
+
+	msg_border_title="Rand hinzufügen"
+	msg_border_size_input_text="Geben Sie die Randgröße in Prozent o Pixeln ein.${new_line}${new_line}Gültige Werte können sein: 10% oder 50"
+	msg_border_finish_title="Rand zu \"${name}\" hinzufügen"
+
+	msg_colorspace_title="Farbraum zu \"${value}\" ändern"
+	msg_colorspace_finish_title="Farbraum von \"${name}\" ändern"
+
+	msg_compress_title="Bildkompression mit Qualität \"${value}\""
+	msg_compress_quality_input_text="Qualität eingeben:"
+	msg_compress_finish_title="Kompression von \"${name}\""
+
+	msg_convert_title="Datei in das Format \"${value}\" konvertieren"
+	msg_convert_format_input_text="Geben Sie das gewünschte Format ein.${new_line}Eine vollständige Liste erhalten Sie über die Shell mit: mogrify -list format${new_line}oder im ImageMagick-Handbuch."
+	msg_convert_finish_title="Konvertierung von \"${name}\""
+
+	msg_favicons_title="Favicons-Erstellung"
+	msg_favicons_finish_title="Erstelle Favicons von \"${name}\""
+
+	msg_montage_title="Bild anhängen"
+	msg_montage_finish_title="Bild an \"${name}\" anhängen"
+
+	msg_optimize_title="Optimierung für das Web"
+	msg_optimize_finish_title="Optimiere \"${name}\""
+
+	msg_overturn_title="Datei auf \"${value}\" umkehren"
+	msg_overturn_finish_title="Umkehren von \"${name}\""
+
+	msg_resize_title="Bildgröße ändern \"${value}\""
+	msg_resize_scale_input_text="Geben Sie den Skalierungsfaktor in Prozent oder la maximale Größe für jede Richtung ein.${new_line}Sie können eine Prozentangabe oder una Pixelgröße wählen.${new_line}${new_line}Gültige Werte können sein: 30% oder 1024x768"
+	msg_resize_finish_title="Größenänderung von \"${name}\""
+
+	msg_rotate_title="Datei mit Winkel von \"${value}\" drehen"
+	msg_rotate_angle_input_text="Gewünschten Drehwinkel eingeben:"
+	msg_rotate_finish_title="Drehung von \"${name}\""
+
+	msg_sepia_title="Sepia-Filter"
+	msg_sepia_finish_title="Sepia-Filter für \"${name}\""
+
+	msg_shadow_title="Schlagschatten"
+	msg_shadow_finish_title="Schlagschatten für \"${name}\""
+
+	msg_timestamp_title="Zeitstempel hinzufügen"
+	msg_timestamp_finish_title="Zeitstempel zu \"${name}\" hinzufügen"
+
+	msg_transparent2color_title="Transparenz in Farbe ändern"
+	msg_transparent2color_finish_title="Transparenz in Farbe von \"${name}\" ändern"
+
+	msg_rfe_title="Datei anhand von Exif-Metadaten umbenennen"
+	msg_rfe_no_metadata="Es ist möglich, dass das Bild keine Metadaten enthält."
+	msg_rfe_finish_title="Datei \"${name}\" umbenennen"
+
+	msg_rff_title="Datei anhand des Dateidatums umbenennen"
+	msg_rff_finish_title="Datei \"${name}\" umbenennen"
+
+	msg_sffe_title="Dateidatum anhand von Exif-Metadaten setzen"
+	msg_sffe_no_metadata="Es ist möglich, dass das Bild keine Metadaten enthält."
+	msg_sffe_finish_title="Datum von \"${name}\" setzen"
+
+	msg_sffn_title="Dateidatum anhand del Dateinamens setzen"
+	msg_sffn_finish_title="Datum von \"${name}\" setzen"
+
+	msg_seff_title="Exif-Datum anhand del Dateidatums setzen"
+	msg_seff_finish_title="Datum von \"${name}\" setzen"
+
+	msg_sefn_title="Exif-Datum anhand del Dateinamens setzen"
+	msg_sefn_finish_title="Datum von \"${name}\" setzen"
+
+	msg_ac_title="Kommentar hinzufügen"
+	msg_ac_comment_input_text="Kommentar zum Hinzufügen schreiben:"
+	msg_ac_finish_title="Kommentar in \"${name}\" hinzufügen"
+
+	msg_ve_title="Metadaten anzeigen"
+	msg_ve_finish_title="Metadaten von \"${name}\" anzeigen"
+
+	msg_ee_title="Metadaten extrahieren"
+	msg_ee_finish_title="Metadaten aus \"${name}\" extrahieren"
+
+	msg_dc_title="Kommentar löschen"
+	msg_dc_finish_title="Kommentar aus \"${name}\" löschen"
+
+	msg_de_title="Exif-Bereich entfernen"
+	msg_de_finish_title="Exif-Bereich aus \"${name}\" entfernen"
+
+	msg_di_title="IPTC-Bereich löschen"
+	msg_di_finish_title="IPTC-Bereich aus \"${name}\" löschen"
+
+	msg_dx_title="XMP-Bereich löschen"
+	msg_dx_finish_title="XMP-Bereich aus \"${name}\" löschen"
+
+	msg_purejpg_title="Alle unnötigen Daten entfernen"
+	msg_purejpg_finish_title="Alle unnötigen Daten aus \"${name}\" entfernen"
+
+	msg_base64_title="In Base64 konvertieren"
+	msg_base64_finish_title="Konvertiere \"${name}\" in Base64"
+}
+
 load_language_en_US () {
 	msg_common_software_not_found_title="Software not found"
 	msg_common_mogrify_not_found_text="Software ImageMagick not found! Please, install it."
@@ -269,12 +389,23 @@ load_language_it () {
 load_language () {
 	## Load localized strings AFTER english strings
 	## - if localized strings not found use english for default
-	## - if localized strings are incomplete use english only fot missing strings :-)
-	load_language_en_US && [ "${lang}" != "en_US" ] && load_language_${lang}
+	## - if localized strings are incomplete use english only for missing strings :-)
+	load_language_en_US
+
+	local lang
+	lang=${LANGUAGE%%:*}
+	[ -z "${lang}" ] && lang=${LANG%%.*}
+
+	case "${lang}" in
+		it*)
+			load_language_it
+			;;
+		de*)
+			load_language_de
+			;;
+	esac
 }
 
-lang=${LANGUAGE%%:*}
-type load_language_${lang} &> /dev/null || lang='en_US'
 load_language
 
 ################################################################################
