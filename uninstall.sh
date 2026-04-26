@@ -1,48 +1,58 @@
-#! /bin/bash
-#
-# 	Part of kde-service-menu-reimage Version 2.5
-# 	Copyright (C) 2018-2019 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
-#
-# 	This program is free software: you can redistribute it and/or modify
-# 	it under the terms of the GNU General Public License as published by
-# 	the Free Software Foundation, either version 3 of the License, or
-# 	(at your option) any later version.
-#
-# 	This program is distributed in the hope that it will be useful,
-# 	but WITHOUT ANY WARRANTY; without even the implied warranty of
-# 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# 	GNU General Public License for more details.
-#
-# 	You should have received a copy of the GNU General Public License
-# 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
+#!/bin/bash
 
-if [[ $EUID -eq 0 ]]; then
-    bin_dir="$(kf5-config --path exe | sed "s/.*://")"
-    desktop_dir="$(kf5-config --path services | sed "s/.*://")ServiceMenus/"
-    doc_dir="$(kf5-config --prefix)/share/doc/kde-service-menu-reimage/"
-    echo "Removing kde-service-menu-reimage system wide"
+# Exit on error
+set -e
+
+# Determine if KDE is installed
+if command -v kbuildsycoca6 >/dev/null 2>&1; then
+    kde_version=6
+elif command -v kbuildsycoca5 >/dev/null 2>&1; then
+    kde_version=5
 else
-    bin_dir="$HOME/bin"
-    desktop_dir="$(kf5-config --path services | sed "s/:.*//")"
-    doc_dir=$HOME"/share/doc/kde-service-menu-reimage/"
-    echo "Removing kde-service-menu-reimage locally"
+    echo "Plasma KDE 5 or Plasma KDE 6 environment required! Exit..."
+    exit 1
 fi
 
-echo "removing ${bin_dir}reimage-kdialog"
-rm "${bin_dir}/reimage-kdialog"
+# Determine if running as root
+if [[ $EUID -eq 0 ]]; then
+    echo "Removing system-wide KDE service menu..."
 
-echo "removing ${desktop_dir}reimage-compress-resize.desktop"
-rm "${desktop_dir}reimage-compress-resize.desktop"
-echo "removing ${desktop_dir}reimage-convert-rotate.desktop"
-rm "${desktop_dir}reimage-convert-rotate.desktop"
-echo "removing ${desktop_dir}reimage-metadata.desktop"
-rm "${desktop_dir}reimage-metadata.desktop"
-echo "removing ${desktop_dir}reimage-tools.desktop"
-rm "${desktop_dir}reimage-tools.desktop"
+    bin_dir="/usr/local/bin"
+    desktop_dir="/usr/share/kio/servicemenus"
+    doc_dir="/usr/share/doc/kde-service-menu-reimage"
+else
+    echo "Removing KDE service menu locally for user..."
 
-echo "removing ${doc_dir}"
-rm -rf "${doc_dir}"
+    bin_dir="$HOME/.local/bin"
+    desktop_dir="$HOME/.local/share/kio/servicemenus"
+    doc_dir="$HOME/.local/share/doc/kde-service-menu-reimage"
+fi
 
-echo
+# Removing binaries
+echo "removing ${bin_dir}/reimage-kdialog"
+rm -f "${bin_dir}/reimage-kdialog"
+
+# Removing service menus
+echo "removing service menus from ${desktop_dir}"
+rm -f "${desktop_dir}/reimage-compress-resize.desktop"
+rm -f "${desktop_dir}/reimage-convert-rotate.desktop"
+rm -f "${desktop_dir}/reimage-metadata.desktop"
+rm -f "${desktop_dir}/reimage-tools.desktop"
+
+# Removing documentation
+if [ -d "$doc_dir" ]; then
+    echo "removing documentation directory ${doc_dir}"
+    rm -rf "$doc_dir"
+fi
+
+# Update KDE service cache
+if [[ $kde_version -eq 6 ]]; then
+    echo "Updating service cache (Plasma 6)"
+    kbuildsycoca6 --noincremental >/dev/null 2>&1 || true
+elif [[ $kde_version -eq 5 ]]; then
+    echo "Updating service cache (Plasma 5)"
+    kbuildsycoca5 --noincremental >/dev/null 2>&1 || true
+fi
+
+echo ""
 echo "kde-service-menu-reimage has been removed. Good bye."

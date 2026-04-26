@@ -1,6 +1,6 @@
 #
-# 	Part of kde-service-menu-reimage Version 2.5
-# 	Copyright (C) 2018-2019 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
+# 	Part of kde-service-menu-reimage Version 2.6
+# 	Copyright (C) 2018-2026 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
 #
 # 	This program is free software: you can redistribute it and/or modify
 # 	it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
 #
 
 [Desktop Entry]
-Actions=jpeg;png;gif;tiff;webp;_SEPARATOR_;pdf;pdfa;_SEPARATOR_;agif;favicons;base64;convert_custom;formats;_SEPARATOR_;rotate_90;rotate_180;rotate_270;rotate_custom;auto;_SEPARATOR_;flip;flop;_SEPARATOR_;
+Actions=gif;jpeg;png;tiff;webp;_SEPARATOR_;pdf;pdfa;_SEPARATOR_;agif;favicons;base64;convert_custom;formats;_SEPARATOR_;rotate_90;rotate_180;rotate_270;rotate_custom;auto;_SEPARATOR_;flip;flop;_SEPARATOR_;
 MimeType=image/*
 Name=ReImage convert and rotate service menu
 ServiceTypes=KonqPopupMenu/Plugin,image/*
@@ -73,6 +73,12 @@ Name=Convert to PDF/A-1
 Name[it]=Converti in PDF/A-1
 
 ################################################################################
+
+[Desktop Action agif]
+Exec=reimage-kdialog agif all %F
+Icon=video-x-mp4
+Name=Generate animated GIF
+Name[it]=Genera GIF animata
 
 [Desktop Action favicons]
 Exec=reimage-kdialog favicons all %F

@@ -40,7 +40,7 @@ The Debian Package kde-service-menu-reimage
  Add timestamp from Exif
  .
  Tools
- Create animated GIF
+ Create animated GIF from a set of images
  Append to right
  GrayScale
  Sepia filter
@@ -49,4 +49,4 @@ The Debian Package kde-service-menu-reimage
  Add transparent border
  Drop shadow
  .
- Copyright (C) 2018-2018 Giuseppe Benigno <giuseppe.benigno@gmail.com>
+ Copyright (C) 2018-2026 Giuseppe Benigno <giuseppe.benigno@gmail.com>
