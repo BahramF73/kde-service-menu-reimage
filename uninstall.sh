@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# 	Part of kde-service-menu-reimage Version 1.0
+# 	Part of kde-service-menu-reimage Version 1.1
 # 	Copyright (C) 2018-2018 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
 #
 # 	This program is free software: you can redistribute it and/or modify
@@ -20,10 +20,16 @@
 bin_dir="$(kf5-config --path exe | sed "s/.*://")"
 echo "removing ${bin_dir}jhead-kdialog"
 sudo rm "${bin_dir}/jhead-kdialog"
+echo "removing ${bin_dir}mogrify-kdialog"
+sudo rm "${bin_dir}/mogrify-kdialog"
 
 desktop_dir="$(kf5-config --path services | sed "s/.*://")ServiceMenus/"
-echo "removing ${desktop_dir}reimage.desktop"
-sudo rm "${desktop_dir}/reimage.desktop"
+echo "removing ${desktop_dir}reimage-compress-resize.desktop"
+sudo rm "${desktop_dir}/reimage-compress-resize.desktop"
+echo "removing ${desktop_dir}reimage-convert-rotate.desktop"
+sudo rm "${desktop_dir}/reimage-convert-rotate.desktop"
+echo "removing ${desktop_dir}reimage-metadata.desktop"
+sudo rm "${desktop_dir}/reimage-metadata.desktop"
 
 doc_dir="$(kf5-config --prefix)/share/doc/kde-service-menu-reimage/"
 echo "removing $(kf5-config --prefix)/share/doc/kde-service-menu-reimage/"

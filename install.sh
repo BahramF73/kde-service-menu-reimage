@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# 	Part of kde-service-menu-reimage Version 1.0
+# 	Part of kde-service-menu-reimage Version 1.1
 # 	Copyright (C) 2018-2018 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
 #
 # 	This program is free software: you can redistribute it and/or modify

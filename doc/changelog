@@ -1,0 +1,43 @@
+kde-service-menu-reimage (2.0) unstable; urgency=medium
+
+  * Advanced optimization for web
+  * Compress in % (change quality)
+  * Resize in % or square
+  * Convert to all formats supported by ImageMagick
+  * Convert to PDF or PDF/A-1
+  * Convert to animated GIF
+  * Convert to Base64
+  * Convert to Greyscale
+  * Sepia filter
+  * Rotate
+  * Overturn vertically/horizontally
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Mon, 30 Apr 2018 17:15:34 +0200
+
+kde-service-menu-reimage (1.2) unstable; urgency=medium
+
+  * Rename from file's date
+  * Set file date from file's name
+  * Delete comment field
+  * Strip Exif section
+  * Delete IPTC section
+  * Delete XMP section
+  * Strip all metadata
+  * More verbosity (display errors)
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Mon, 30 Apr 2018 01:18:44 +0200
+
+kde-service-menu-reimage (1.1) unstable; urgency=medium
+
+  * Added set file datetime from Exif metadata
+  * Added set Exif datetime from file's date
+  * Added set Exif datetime from file's name
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Sat, 28 Apr 2018 01:34:44 +0200
+
+kde-service-menu-reimage (1.0) unstable; urgency=medium
+
+  * Initial Release.
+  * Rename file with date from Exif metadata
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Fri, 27 Apr 2018 15:22:34 +0200
