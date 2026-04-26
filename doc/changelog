@@ -1,6 +1,10 @@
 kde-service-menu-reimage (2.6) unstable; urgency=medium
 
   * Added support for KDE Plasma 6
+  * Massive localization expansion: added support for Arabic, Esperanto, Spanish,
+    Persian, French, Japanese, Polish, Portuguese, Russian, Turkish, and Chinese
+  * Added "Social OG" (1200x630) resolution preset for easy social media sharing
+  * Refactored notification logic: single summary notification for batch operations
   * Added "Create animated GIF from a set of images" feature
   * Added "Convert to Base64" feature integrated into the main script
   * Refactored binary detection with ImageMagick 7 (magick) support
@@ -11,7 +15,7 @@ kde-service-menu-reimage (2.6) unstable; urgency=medium
   * Modernized installation and uninstallation scripts
   * Updated copyright years to 2007-2026
 
- -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Tue, 31 Mar 2026 18:08:44 +0200
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Sun, 26 Apr 2026 12:15:00 +0200
 
 kde-service-menu-reimage (2.5) unstable; urgency=medium
 

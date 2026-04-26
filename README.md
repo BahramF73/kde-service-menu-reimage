@@ -8,11 +8,11 @@ A powerful and comprehensive KDE Plasma 6 Service Menu for advanced image manipu
 ## 🌟 Features
 
 ### 🖼️ Image Manipulation
-*   **Resize**: Scaled by percentage or specific dimensions.
+*   **Resize**: Scaled by percentage or specific dimensions (including **Social OG 1200x630**).
 *   **Convert**: Transform to any format supported by ImageMagick (WebP, PNG, JPG, etc.).
-*   **Rotate & Flip**: Auto-orient, custom angle, flip, or flop.
+*   **Rotate & Flip**: Auto-orient using Exif, custom angle, flip, or flop.
 *   **Filters**: Add borders, drop shadows, or sepia effect.
-*   **Optimization**: Advanced auto-optimization for web (strip data, interlace, etc.).
+*   **Optimization**: Advanced auto-optimization for web (strip data, interlace, progressive, etc.).
 
 ### 📂 Metadata Management (Exif/IPTC/XMP)
 *   **Rename**: Rename files based on Exif/File date and time.
@@ -26,10 +26,27 @@ A powerful and comprehensive KDE Plasma 6 Service Menu for advanced image manipu
 *   **Montage**: Append/Montage pictures together.
 *   **Base64**: Convert images to Base64 strings for web embedding.
 
+## 🌍 Localization
+Reimage is fully translated into **14 languages**:
+*   🇬🇧 English
+*   🇮🇹 Italian
+*   🇩🇪 German
+*   🇪🇸 Spanish
+*   🇫🇷 French
+*   🇷🇺 Russian
+*   🇵🇱 Polish
+*   🇹🇷 Turkish
+*   🇵🇹 Portuguese
+*   🇯🇵 Japanese
+*   🇨🇳 Chinese (Simplified)
+*   🇮🇷 Persian (Farsi)
+*   🇦🇪 Arabic
+*   🌌 Esperanto
+
 ## 📋 Requirements
 
 To use all features, ensure the following tools are installed:
-*   `ImageMagick` (v6 or v7 - required for conversion, resizing, etc.)
+*   `ImageMagick` (**v7 `magick`** or v6 - auto-detected)
 *   `jhead` (required for Exif metadata operations)
 *   `kdialog` (for GUI interactions)
 *   `qdbus` (part of qt6-tools or qt5-tools)
