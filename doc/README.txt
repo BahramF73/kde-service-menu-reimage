@@ -2,8 +2,8 @@
 
 A powerful and comprehensive KDE Plasma 6 Service Menu for advanced image manipulation and metadata management directly from Dolphin or Konqueror.
 
-![Version](https://img.shields.io/badge/version-2.6-blue)
-![License](https://img.shields.io/badge/license-GPL--3-green)
+Version: 2.6
+License: GPL-3
 
 ## 🌟 Features
 

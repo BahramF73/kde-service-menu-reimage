@@ -56,7 +56,7 @@ install -vm 755 servicemenus/* "$desktop_dir/"
 # Copy documentation (maintaining structure)
 echo "Copy documentation"
 (cd doc && find . -type f -exec install -vDm 644 "{}" "$doc_dir/{}" \;)
-install -vm 644 README.md "$doc_dir/README"
+install -vm 644 README.md "$doc_dir/README.md"
 
 # Update KDE service cache
 if [[ $kde_version -eq 6 ]]; then

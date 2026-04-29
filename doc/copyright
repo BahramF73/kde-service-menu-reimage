@@ -1,13 +1,11 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: kde-service-menu-reimage
+Source: https://github.com/giuseppebenigno/kde-service-menu-reimage
 
 Files: *
 Copyright: 2018-2026 Giuseppe Benigno <giuseppe.benigno@gmail.com>
 License: GPL-3.0+
 
-Files: debian/*
-Copyright: 2018-2026 Giuseppe Benigno <giuseppe.benigno@gmail.com>
-License: GPL-3.0+
 
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify
