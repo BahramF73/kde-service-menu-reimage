@@ -1,3 +1,16 @@
+kde-service-menu-reimage (2.6.1) unstable; urgency=medium
+
+  * Clean up and synchronize documentation
+  * Replaced outdated doc/README with doc/README.txt synced from README.md
+  * Updated install.sh to properly install both README.md and README.txt
+  * Updated install.sh to automatically configure PATH in ~/.config/environment.d/10-local-bin.conf and ~/.profile for local user installations
+  * Sorted the list of supported languages alphabetically in the README
+  * Added project website URL and copyright notices to the READMEs
+  * Cleaned up doc/copyright by removing obsolete 'debian/*' references and adding Source URL
+  * Removed redundant doc/AUTHORS and obsolete doc/menu.config files
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Mon, 29 Jun 2026 16:25:03 +0200
+
 kde-service-menu-reimage (2.6) unstable; urgency=medium
 
   * Added support for KDE Plasma 6

@@ -71,11 +71,39 @@ echo "Installation completed!"
 
 # Check if bin_dir is in PATH (only if binaries were installed and it's a user installation)
 if [[ $EUID -ne 0 ]] && [ -d "./bin" ] && [ "$(ls -A ./bin)" ]; then
+    need_relogin=0
+
+    # 1. Configure graphical session (systemd user session) used by Plasma 5.21+ / Plasma 6
+    env_dir="$HOME/.config/environment.d"
+    env_file="$env_dir/10-local-bin.conf"
+    
+    if [ ! -f "$env_file" ] || ! grep -q "\$HOME/.local/bin" "$env_file"; then
+        mkdir -p "$env_dir"
+        echo 'PATH="$HOME/.local/bin:$PATH"' >> "$env_file"
+        echo "Added $bin_dir to graphical session PATH (systemd environment.d)."
+        need_relogin=1
+    fi
+
+    # 2. Configure ~/.profile as fallback for X11 / older sessions
+    if [ -f "$HOME/.profile" ] && ! grep -q "\$HOME/.local/bin" "$HOME/.profile" && ! grep -q "\$HOME/\.local/bin" "$HOME/.profile"; then
+        echo "" >> "$HOME/.profile"
+        echo 'if [ -d "$HOME/.local/bin" ] ; then' >> "$HOME/.profile"
+        echo '    PATH="$HOME/.local/bin:$PATH"' >> "$HOME/.profile"
+        echo 'fi' >> "$HOME/.profile"
+        echo "Added $bin_dir to ~/.profile PATH."
+        need_relogin=1
+    fi
+
+    if [[ $need_relogin -eq 1 ]]; then
+        echo ""
+        echo "⚠️  IMPORTANT: You may need to log out and log back in for KDE Plasma to detect the new PATH."
+    fi
+
     if [[ ":$PATH:" != *":$bin_dir:"* ]]; then
         echo ""
-        echo "⚠️  WARNING: $bin_dir is not in your PATH!"
+        echo "⚠️  WARNING: $bin_dir is not in your current terminal PATH!"
         echo ""
-        echo "To use the installed executable, add this line to your shell configuration:"
+        echo "To use the installed executable from the command line, add this line to your shell configuration:"
         echo ""
         echo "  export PATH=\"$bin_dir:\$PATH\""
         echo ""
