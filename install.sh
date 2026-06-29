@@ -39,9 +39,13 @@ fi
 check_dep jhead    jhead
 check_dep webpinfo webp
 check_dep kdialog  kdialog
-if ! command -v qdbus6 >/dev/null 2>&1 && ! command -v qdbus >/dev/null 2>&1; then
-    missing_cmds+=("qdbus/qdbus6")
-    missing_pkgs+=("qt6-tools-dev-tools")
+if ! command -v qdbus6 >/dev/null 2>&1 && ! command -v qdbus-qt6 >/dev/null 2>&1 && ! command -v qdbus >/dev/null 2>&1; then
+    missing_cmds+=("qdbus/qdbus6/qdbus-qt6")
+    if command -v dnf >/dev/null 2>&1; then
+        missing_pkgs+=("qt6-qttools")
+    else
+        missing_pkgs+=("qt6-tools-dev-tools")
+    fi
 fi
 
 if [ ${#missing_cmds[@]} -gt 0 ]; then
