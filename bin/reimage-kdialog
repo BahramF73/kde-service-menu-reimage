@@ -20,8 +20,6 @@
 #### languages strings messages #################
 # Syntax for strings name is: msg_[$format]_$window_[$section]
 # For languages as sr@Latn use srLatn
-exec >/tmp/reimage.log 2>&1
-set -x
 
 new_line="
 "
