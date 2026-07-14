@@ -2305,7 +2305,7 @@ run_timestamp () {
 	timestamp=$("${jhead_bin}" -exifmap "${input}" | grep "Date/Time" | sed "s/^[^:]*:[[:blank:]]*\([[:digit:]]\{4\}\):\([[:digit:]]\{2\}\):\([[:digit:]]\{2\}\)/\1-\2-\3/")
 
 	if [ "${overwrite}" = true ]; then
-		msg=$("${convert_bin}" "${input}" -gravity SouthEast -pointsize 30 -fill white -annotate +30+30 "${timestamp}" "${input}" 2>&1)
+		msg=$("${mogrify_bin}" -gravity SouthEast -pointsize 30 -fill white -annotate +30+30 "${timestamp}" "${input}" 2>&1)
 	else
 		msg=$("${convert_bin}" "${input}" -gravity SouthEast -pointsize 30 -fill white -annotate +30+30 "${timestamp}" "${dir}/${base}_timestamp.${ext}" 2>&1)
 	fi
@@ -2315,7 +2315,7 @@ run_timestamp () {
 
 run_transparent2color () {
 	if [ "${overwrite}" = true ]; then
-		msg=$("${mogrify_bin}" "${input}" -background "${color}" -flatten "${input}" 2>&1)
+		msg=$("${mogrify_bin}" -background "${color}" -flatten "${input}" 2>&1)
 	else
 		msg=$("${convert_bin}" "${input}" -background "${color}" -flatten "${dir}/${base}_background.${ext}" 2>&1)
 	fi
